@@ -1,0 +1,355 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Meno Care｜デリケートゾーンケア講座 12/9（水）オンライン40分</title>
+<meta name="description" content="「今さら聞けない」デリケートゾーンのお手入れを、医学的なことと、そうでないことを分けてお伝えします。2026年12月9日（水）21:20〜40分。女性の体ケア整体サロン Meno Care。">
+<style>
+  :root {
+    --accent: #FF9999;
+    --accent-deep: #E0605C;
+    --accent-dark: #C24A47;
+    --tint: #FFEFEF;
+    --tint2: #FFF6F3;
+    --ink: #2B2622;
+    --ink-soft: #6B6156;
+    --line: #F1E4DD;
+    --paper: #FFFFFF;
+  }
+  * { box-sizing: border-box; }
+  html, body {
+    margin: 0; padding: 0; background: #F3ECE7;
+    font-family: "Hiragino Sans", "Noto Sans JP", "Yu Gothic", sans-serif;
+    color: var(--ink); -webkit-font-smoothing: antialiased;
+    word-break: keep-all; overflow-wrap: break-word; scroll-behavior: smooth;
+  }
+  a { color: inherit; text-decoration: none; }
+  a:focus-visible { outline: 3px solid var(--accent-dark); outline-offset: 3px; }
+  .page { max-width: 440px; margin: 0 auto; background: var(--paper); overflow: clip; }
+
+  /* 画像スロット：assets に同名ファイルを入れると表示されます */
+  .slot { position: relative; overflow: hidden; border-radius: 18px; background: linear-gradient(135deg, #FFE6E2, #FFD3CE); }
+  .slot img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+  .slot .cap { position: absolute; left: 14px; bottom: 12px; right: 14px; font-size: 11px; line-height: 1.5; color: rgba(194,74,71,.72); }
+  .slot.has-img .cap { display: none; }
+  .r45 { aspect-ratio: 4 / 5; } .r32 { aspect-ratio: 3 / 2; } .r169 { aspect-ratio: 16 / 9; } .r11 { aspect-ratio: 1 / 1; }
+
+  /* 要確認マーク（公開前に必ず差し替え） */
+  .tbd { background: #FFF3B8; color: #7A5A00; font-size: .82em; font-weight: 700; padding: 1px 7px; border-radius: 5px; white-space: nowrap; }
+
+  /* 1. FV */
+  .topbar { position: sticky; top: 0; z-index: 100; height: 56px; display: flex; align-items: center; justify-content: space-between; padding: 0 20px; background: #fff; border-bottom: 1px solid var(--line); }
+  .topbar .logo { font-weight: 800; font-size: 18px; letter-spacing: .02em; }
+  .topbar .cta-link { background: var(--accent-deep); color: #fff; font-size: 13px; font-weight: 700; padding: 9px 16px; border-radius: 999px; }
+  .fv { position: relative; overflow: hidden; aspect-ratio: 9 / 16; display: flex; flex-direction: column; justify-content: space-between; background: linear-gradient(170deg, #E98B87 0%, #E0605C 55%, #C24A47 100%); }
+  .fv > img.fv-bg { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% 20%; }
+  .fv-scrim { position: absolute; inset: 0; z-index: 1; opacity: 0; background: linear-gradient(180deg, rgba(24,14,10,0) 0%, rgba(24,14,10,0) 40%, rgba(24,14,10,.5) 58%, rgba(24,14,10,.82) 100%); }
+  .fv.has-img .fv-scrim { opacity: 1; }
+  .fv-top, .fv-bottom { position: relative; z-index: 2; padding: 0 20px; }
+  .fv-top { padding-top: 18px; display: flex; flex-direction: column; gap: 12px; align-items: flex-start; }
+  .fv-badge { color: #fff; font-size: 12.5px; font-weight: 700; line-height: 1.5; background: var(--accent-deep); padding: 5px 12px; border-radius: 999px; }
+  .fv-hook { font-family: "Hiragino Maru Gothic ProN", "Yu Gothic", sans-serif; font-size: 14px; line-height: 1.7; color: var(--accent-deep); background: rgba(255,255,255,.95); padding: 10px 14px; border-radius: 14px; box-shadow: 0 4px 16px rgba(0,0,0,.1); }
+  .fv-bottom { padding-bottom: 26px; }
+  .fv h1 { margin: 0; font-size: 30px; line-height: 1.38; font-weight: 900; color: #fff; text-shadow: 0 2px 18px rgba(0,0,0,.45); }
+  .fv .sub { margin: 12px 0 0; font-size: 14.5px; line-height: 1.75; color: #FBEFEF; text-shadow: 0 1px 10px rgba(0,0,0,.4); }
+  .fv-date { margin-top: 16px; display: flex; gap: 10px; align-items: center; background: rgba(255,255,255,.96); color: var(--ink); border-radius: 14px; padding: 10px 14px; }
+  .fv-date b { font-size: 20px; font-weight: 900; color: var(--accent-deep); line-height: 1.2; }
+  .fv-date small { display: block; font-size: 12px; color: var(--ink-soft); font-weight: 600; margin-top: 2px; }
+  .fv-chips { display: flex; gap: 8px; margin-top: 12px; flex-wrap: wrap; }
+  .fv-chips span { font-size: 12px; font-weight: 700; color: #fff; border: 1px solid rgba(255,255,255,.55); background: rgba(255,255,255,.16); padding: 6px 12px; border-radius: 999px; }
+
+  /* 共通 */
+  section { padding: 56px 24px; }
+  section.alt { background: var(--tint2); }
+  .eyebrow { display: inline-block; background: var(--tint); color: var(--accent-deep); font-size: 12px; font-weight: 700; padding: 6px 14px; border-radius: 999px; margin-bottom: 16px; letter-spacing: .02em; }
+  h2.sec-title { font-size: 24px; line-height: 1.55; font-weight: 900; margin: 0 0 18px; text-wrap: balance; }
+  h2.sec-title .accent { color: var(--accent-deep); }
+  p.lede { font-size: 15px; line-height: 1.95; color: var(--ink-soft); margin: 0 0 24px; }
+  p.lede strong { color: var(--ink); }
+  .stack { display: flex; flex-direction: column; gap: 20px; }
+  .cta-btn { display: block; background: var(--accent-deep); color: #fff; text-align: center; font-size: 16px; font-weight: 800; padding: 18px; border-radius: 999px; box-shadow: 0 8px 22px rgba(224,96,92,.32); margin-top: 28px; }
+  .cta-btn .sub { display: block; font-size: 11.5px; font-weight: 500; margin-top: 4px; opacity: .94; }
+  .fv .cta-btn { margin-top: 16px; background: #fff; color: var(--accent-deep); box-shadow: 0 10px 26px rgba(0,0,0,.28); }
+
+  .check-list { display: flex; flex-direction: column; gap: 10px; margin: 0 0 24px; padding: 0; list-style: none; }
+  .check-list li { display: flex; gap: 12px; align-items: flex-start; background: #fff; border: 1px solid var(--line); border-radius: 14px; padding: 14px 16px; font-size: 15px; font-weight: 700; line-height: 1.6; }
+  .check-list .tick { flex: none; width: 22px; height: 22px; margin-top: 1px; border-radius: 50%; background: var(--accent-deep); color: #fff; font-size: 13px; display: grid; place-items: center; }
+
+  .quote { font-family: "Hiragino Maru Gothic ProN", "Yu Gothic", sans-serif; font-size: 22px; line-height: 1.7; font-weight: 800; text-align: center; margin: 0 0 20px; }
+  .quote em { font-style: normal; color: var(--accent-deep); }
+
+  .flow { display: flex; flex-direction: column; gap: 0; margin: 0 0 24px; }
+  .flow .box { background: #fff; border: 1px solid var(--line); border-radius: 14px; padding: 14px 16px; font-size: 14.5px; line-height: 1.75; }
+  .flow .box b { color: var(--accent-deep); }
+  .flow .arrow { text-align: center; color: var(--accent); font-size: 18px; line-height: 1.6; }
+
+  .benefit { display: flex; flex-direction: column; gap: 12px; margin: 0; padding: 0; list-style: none; }
+  .benefit li { display: flex; gap: 14px; background: #fff; border: 1px solid var(--line); border-radius: 16px; padding: 16px; font-size: 15px; font-weight: 700; line-height: 1.7; }
+  .benefit li span.n { flex: none; font-size: 22px; line-height: 1.3; }
+
+  .offer-card { background: #fff; border: 2px solid var(--accent-deep); border-radius: 22px; padding: 24px 20px; box-shadow: 0 10px 28px rgba(224,96,92,.16); }
+  .offer-tag { display: inline-block; background: var(--accent-deep); color: #fff; font-size: 12px; font-weight: 800; padding: 4px 12px; border-radius: 999px; margin-bottom: 12px; }
+  .offer-name { font-size: 17px; font-weight: 900; line-height: 1.6; margin-bottom: 12px; }
+  .offer-row { display: flex; gap: 12px; padding: 14px 0; border-top: 1px dashed var(--line); font-size: 14px; line-height: 1.75; }
+  .offer-row:first-of-type { border-top: 0; }
+  .offer-row .ic { flex: none; width: 34px; height: 34px; border-radius: 50%; background: var(--tint); display: grid; place-items: center; font-size: 17px; }
+  .offer-row b { display: block; font-size: 15px; margin-bottom: 2px; }
+  .offer-row small { color: var(--ink-soft); font-size: 12px; display: block; margin-top: 2px; }
+
+  .reasons { display: flex; flex-direction: column; gap: 14px; }
+  .reason { background: #fff; border: 1px solid var(--line); border-radius: 18px; padding: 18px; }
+  .reason .no { font-size: 11px; font-weight: 800; color: var(--accent-deep); letter-spacing: .08em; }
+  .reason h3 { margin: 4px 0 6px; font-size: 17px; line-height: 1.6; font-weight: 900; }
+  .reason p { margin: 0; font-size: 14px; line-height: 1.85; color: var(--ink-soft); }
+
+  .chips { display: flex; gap: 8px; flex-wrap: wrap; margin: 0 0 16px; }
+  .chips span { background: var(--tint); color: var(--accent-dark); font-size: 12.5px; font-weight: 700; padding: 6px 12px; border-radius: 999px; }
+
+  .voice { background: #fff; border: 1px solid var(--line); border-radius: 18px; padding: 20px; position: relative; }
+  .voice::before { content: "“"; position: absolute; top: 2px; left: 14px; font-size: 54px; color: var(--accent); line-height: 1; font-family: Georgia, serif; }
+  .voice p { margin: 18px 0 10px; font-size: 14.5px; line-height: 1.95; }
+  .voice .who { font-size: 12.5px; color: var(--ink-soft); font-weight: 700; }
+  .note { font-size: 11.5px; line-height: 1.7; color: var(--ink-soft); margin: 10px 0 0; }
+
+  .steps { display: flex; flex-direction: column; gap: 12px; padding: 0; margin: 0; list-style: none; counter-reset: s; }
+  .steps li { counter-increment: s; display: flex; gap: 14px; align-items: flex-start; background: #fff; border: 1px solid var(--line); border-radius: 16px; padding: 16px; font-size: 14.5px; line-height: 1.75; }
+  .steps li::before { content: counter(s); flex: none; width: 28px; height: 28px; border-radius: 50%; background: var(--accent-deep); color: #fff; font-weight: 800; display: grid; place-items: center; font-size: 14px; }
+  .steps li b { display: block; font-size: 15px; }
+
+  .timeline { margin: 0; padding: 0; list-style: none; border-left: 3px solid var(--tint); }
+  .timeline li { position: relative; padding: 0 0 18px 20px; font-size: 14.5px; line-height: 1.75; }
+  .timeline li::before { content: ""; position: absolute; left: -9px; top: 6px; width: 15px; height: 15px; border-radius: 50%; background: var(--accent-deep); border: 3px solid #fff; }
+  .timeline li b { display: block; color: var(--accent-deep); font-size: 13px; }
+
+  .faq { display: flex; flex-direction: column; gap: 12px; }
+  .faq details { background: #fff; border: 1px solid var(--line); border-radius: 14px; padding: 0 16px; }
+  .faq summary { cursor: pointer; list-style: none; padding: 16px 0; font-size: 15px; font-weight: 800; line-height: 1.6; display: flex; gap: 10px; }
+  .faq summary::-webkit-details-marker { display: none; }
+  .faq summary::before { content: "Q"; color: var(--accent-deep); font-weight: 900; }
+  .faq details p { margin: 0; padding: 0 0 16px 22px; font-size: 14px; line-height: 1.9; color: var(--ink-soft); }
+
+  .final { background: linear-gradient(170deg, #E98B87 0%, #E0605C 60%, #C24A47 100%); color: #fff; text-align: center; }
+  .final h2 { font-size: 24px; line-height: 1.6; font-weight: 900; margin: 0 0 14px; }
+  .final p { font-size: 14.5px; line-height: 1.9; margin: 0 0 6px; opacity: .96; }
+  .final .cta-btn { background: #fff; color: var(--accent-deep); box-shadow: 0 10px 26px rgba(0,0,0,.25); }
+  .final .tbd { background: rgba(255,255,255,.9); }
+
+  footer { padding: 28px 24px 96px; text-align: center; font-size: 11.5px; line-height: 1.9; color: var(--ink-soft); }
+
+  .sticky-cta { position: fixed; left: 0; right: 0; bottom: 0; z-index: 90; display: flex; justify-content: center; padding: 10px 16px calc(10px + env(safe-area-inset-bottom)); background: linear-gradient(180deg, rgba(255,255,255,0), #fff 40%); pointer-events: none; }
+  .sticky-cta a { pointer-events: auto; width: 100%; max-width: 408px; background: var(--accent-deep); color: #fff; text-align: center; font-size: 15px; font-weight: 800; padding: 15px; border-radius: 999px; box-shadow: 0 8px 22px rgba(224,96,92,.4); }
+
+  /* 短縮版の調整 */
+  .fv { aspect-ratio: auto; min-height: 680px; gap: 28px; }
+  .fv-bottom { padding-bottom: 22px; }
+  .sticky-cta a { white-space: nowrap; font-size: 14.5px; }
+  section { padding: 40px 24px; }
+  .eyebrow { margin-bottom: 12px; }
+  h2.sec-title { font-size: 22px; margin-bottom: 14px; }
+  .quote { font-size: 20px; margin-bottom: 14px; }
+  .check-list { gap: 8px; margin-bottom: 18px; }
+  .check-list li { padding: 11px 14px; font-size: 14.5px; }
+  .flow .box { padding: 11px 14px; } .flow .box b { display: block; }
+  .flow { margin-bottom: 20px; }
+  .benefit li { padding: 13px 14px; }
+  .cta-btn { margin-top: 20px; }
+  .offer-card { padding: 20px 18px; }
+  .reasons { gap: 10px; } .reason { padding: 14px 16px; } .reason h3 { font-size: 16px; margin: 2px 0 4px; } .reason p { font-size: 13.5px; line-height: 1.75; }
+  .profile { display: flex; gap: 14px; align-items: center; margin-bottom: 16px; }
+  .profile .ph { flex: none; width: 104px; aspect-ratio: 4 / 5; border-radius: 14px; }
+  .voice { padding: 16px 18px; } .voice p { margin: 14px 0 8px; font-size: 14px; line-height: 1.85; }
+  .steps { gap: 8px; } .steps li { padding: 12px 14px; font-size: 13.5px; line-height: 1.7; }
+  .timeline li { padding-bottom: 12px; font-size: 14px; line-height: 1.7; }
+  .faq { gap: 8px; } .faq summary { padding: 13px 0; font-size: 14.5px; }
+  .final h2 { font-size: 22px; }
+  footer { padding-top: 20px; }
+
+  /* FV：写真の女性と文字が重ならない配置（文字は写真上部の余白＋上の帯、ボタン類は写真の下） */
+  .fv { --w: min(100vw, 440px); display: block; aspect-ratio: auto; min-height: 0; gap: 0; background: #FBF4EA; }
+  .fv-top { padding: 16px 20px 0; gap: 10px; }
+  .fv-hook { margin: 0; font-size: 13.5px; line-height: 1.7; border: 1px solid var(--line); box-shadow: 0 3px 12px rgba(120,80,60,.08); }
+  .fv h1 { font-size: 28px; line-height: 1.38; color: var(--ink); text-shadow: none; margin: 4px 0 0; }
+  .fv .sub { color: var(--ink-soft); text-shadow: none; margin: 0; font-size: 14px; line-height: 1.7; }
+  .fv-photo { position: relative; z-index: 1; margin-top: calc(var(--w) * -0.43); aspect-ratio: 1080 / 1400; overflow: hidden; pointer-events: none;
+    -webkit-mask-image: linear-gradient(180deg, transparent 0, #000 14%, #000 84%, transparent 100%);
+            mask-image: linear-gradient(180deg, transparent 0, #000 14%, #000 84%, transparent 100%); }
+  .fv-photo img { display: block; width: 100%; height: auto; }
+  .fv-bottom { margin-top: -34px; padding-bottom: 28px; }
+  .fv-date { background: #fff; border: 1px solid var(--line); box-shadow: 0 3px 12px rgba(120,80,60,.08); }
+  .fv .cta-btn { background: var(--accent-deep); color: #fff; box-shadow: 0 8px 22px rgba(224,96,92,.32); }
+  .fv-chips span { color: var(--accent-dark); border-color: rgba(224,96,92,.4); background: #fff; }
+
+  /* 画像フレーム */
+  .benefit li { align-items: center; }
+  .benefit .bimg { flex: none; width: 84px; aspect-ratio: 1 / 1; border-radius: 14px; }
+  .benefit .btxt { flex: 1; min-width: 0; word-break: normal; overflow-wrap: anywhere; }
+  .benefit .bimg { min-width: 84px; }
+  .flow .box { display: flex; gap: 14px; align-items: center; }
+  .flow .box .btxt { flex: 1; }
+  .flow .fimg { flex: none; width: 96px; aspect-ratio: 1 / 1; border-radius: 12px; }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <div class="topbar">
+    <span class="logo">Meno Care</span>
+    <a class="cta-link" href="#apply">講座を受けてみる</a>
+  </div>
+
+  <!-- ============ 1. FV ============ -->
+  <header class="fv" id="fv">
+    <div class="fv-top">
+      <span class="fv-badge">理学療法士資格保有／産婦人科で勤務</span>
+      <p class="fv-hook">「デリケートゾーン」「フェムケア」最近聞くけど、今さら「どうしたらいい？」なんて周りには聞きづらい。</p>
+      <h1>いつから始める？<br>大人の<br>デリケートゾーンケア</h1>
+      <p class="sub">医学的なことと、そうでないことを分けて、やさしくお伝えします。</p>
+    </div>
+    <div class="fv-photo"><img src="assets/fv.webp" alt="目を閉じて胸に手を当て、穏やかな表情の女性"></div>
+    <div class="fv-bottom">
+      <div class="fv-date">
+        <div><b>12/9（水）21:20〜</b><small>40分／Zoomでオンライン開催</small></div>
+      </div>
+      <a class="cta-btn" href="#apply">講座を受けてみる</a>
+      <div class="fv-chips"><span>こっそり聞ける</span><span>40分</span><span>アーカイブあり</span></div>
+    </div>
+  </header>
+
+  <!-- ============ 2・3. 悩みの共感＋問題提起 ============ -->
+  <section>
+    <span class="eyebrow">こんなこと、ありませんか？</span>
+    <h2 class="sec-title">生理が近づくと、気が滅入る。</h2>
+    <ul class="check-list">
+      <li><span class="tick">✓</span>生理が近づくと、気が滅入る</li>
+      <li><span class="tick">✓</span>この前かゆみが落ち着いたばっかりなのに…と思う</li>
+      <li><span class="tick">✓</span>周りには聞きづらくて、ひとりで調べている</li>
+    </ul>
+    <p class="quote">そんなこと<em>毎月</em>感じていませんか？</p>
+    <p class="lede" style="margin:0;text-align:center"><strong>閉経するまで、ずっと我慢し続けるしかないのかな？</strong><br>ふと、そう思うこともあるかもしれません。</p>
+    <div style="margin-top:28px;padding-top:24px;border-top:1px dashed var(--line)">
+      <p style="margin:0 0 12px;text-align:center;font-size:16px;font-weight:900;line-height:1.6;color:var(--accent-deep)">こんな方にもおすすめです</p>
+      <ul class="check-list" style="margin:0">
+        <li><span class="tick">✓</span>デリケートゾーンのケアに興味・関心がある方</li>
+        <li><span class="tick">✓</span>便秘がちの方</li>
+        <li><span class="tick">✓</span>出産後の会陰切開の傷跡が気になっている方</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============ 4・5. 原因の提示＋解決策 ============ -->
+  <section class="alt">
+    <h2 class="sec-title">不快感は、ナプキンのせいだけではないのかも。</h2>
+    <p class="lede" style="margin-bottom:14px">デリケートゾーンの<strong>お肌の状態</strong>、気にしたことはありますか？</p>
+    <div class="flow">
+      <div class="box"><span class="btxt">これまで…<b>ナプキンのせい</b>だと思っていた</span><div class="slot fimg"><img src="assets/s04-1.jpg" alt="" onload="this.parentNode.classList.add('has-img')" onerror="this.style.display='none'"><span class="cap">画像1</span></div></div>
+      <div class="arrow">▼</div>
+      <div class="box"><span class="btxt">もしかすると…<b>デリケートゾーンのお肌の状態</b>も関係しているかも</span><div class="slot fimg"><img src="assets/s04-2.jpg" alt="" onload="this.parentNode.classList.add('has-img')" onerror="this.style.display='none'"><span class="cap">画像2</span></div></div>
+    </div>
+    <h3 style="font-size:19px;line-height:1.6;font-weight:900;margin:8px 0 8px">普段から、正しいお手入れを。</h3>
+    <p class="lede" style="margin:0">特別なことをするのではありません。<br>普段からデリケートゾーンについても<strong>正しいお手入れ</strong>をしてあげることで、<strong>快適な状態を保ちやすく</strong>なると言われています。</p>
+  </section>
+
+  <!-- ============ 6. ベネフィット ============ -->
+  <section>
+    <span class="eyebrow">講座のあとに</span>
+    <h2 class="sec-title">毎月が、少し<span class="accent">ラク</span>になるヒントを。</h2>
+    <ul class="benefit">
+      <li><div class="slot bimg"><img src="assets/s06-1.jpg" alt="" onload="this.parentNode.classList.add('has-img')" onerror="this.style.display='none'"><span class="cap">画像1</span></div><span class="btxt">毎月の不快感やかゆみと、うまく付き合いやすくなる</span></li>
+      <li><div class="slot bimg"><img src="assets/s06-2.jpg" alt="" onload="this.parentNode.classList.add('has-img')" onerror="this.style.display='none'"><span class="cap">画像2</span></div><span class="btxt">生理に対して、ネガティブになりすぎずに過ごせる日が増える</span></li>
+      <li><div class="slot bimg"><img src="assets/s06-3.jpg" alt="" onload="this.parentNode.classList.add('has-img')" onerror="this.style.display='none'"><span class="cap">画像3</span></div><span class="btxt">「これで合ってるのかな？」が減って、自分のケアに自信が持てる</span></li>
+    </ul>
+    <p class="note">※効果には個人差があり、結果をお約束するものではありません。</p>
+    <a class="cta-btn" href="#apply">講座を受けてみる<span class="sub">12/9（水）21:20〜 40分</span></a>
+  </section>
+
+  <!-- ============ 7. オファー（中盤） ============ -->
+  <section class="alt" id="offer">
+    <span class="eyebrow">特典のご案内</span>
+    <h2 class="sec-title">ご参加の方への<span class="accent">2つの特典</span></h2>
+    <div class="offer-card">
+      <span class="offer-tag">今回だけの特典</span>
+      <div class="offer-name">デリケートゾーンケア講座<br><small style="font-weight:600;color:var(--ink-soft)">12/9（水）21:20〜 40分／参加費 1,000円（アカデミや会員は無料）</small></div>
+      <div class="offer-row"><span class="ic">🎬</span><div><b>アーカイブをプレゼント</b>当日参加できなくても、あとから見返せます<small>視聴期間：開催後2週間</small></div></div>
+      <div class="offer-row"><span class="ic">🚚</span><div><b>送料のうち500円をMeno Careが負担します</b>講座後3日以内にご購入いただいた場合<small>対象：講座の中でご紹介する、デリケートゾーンケア用のソープ・オイル（当店取り扱い商品）</small></div></div>
+    </div>
+  </section>
+
+  <!-- ============ 8・9. 特徴＋プロフィール ============ -->
+  <section>
+    <span class="eyebrow">この講座の特徴</span>
+    <h2 class="sec-title">安心して聞いていただける理由</h2>
+    <div class="reasons">
+      <div class="reason"><span class="no">POINT 1</span><h3>医学的なことと、そうでないことを分けて</h3><p>「医学的に言われていること」と「日々のケアの工夫」に、線を引いてご説明します。</p></div>
+      <div class="reason"><span class="no">POINT 2</span><h3>「どうして？」から方法まで</h3><p>理由からお伝えするので、ご自身で実践できるようになります。</p></div>
+      <div class="reason"><span class="no">POINT 3</span><h3>お顔出し・お声出しは、ご自身のペースで</h3><p>周りには聞きづらい内容だからこそ、気兼ねなく聞いていただける形でお届けします。</p></div>
+    </div>
+
+    <span class="eyebrow" style="margin-top:36px">講師について</span>
+    <div class="profile">
+      <div class="slot ph"><img src="assets/s09-profile.jpg" alt="講師 上田智美" style="object-position:52% 25%" onload="this.parentNode.classList.add('has-img')" onerror="this.style.display='none'"><span class="cap">講師写真</span></div>
+      <div>
+        <p style="margin:0 0 6px;font-size:19px;font-weight:900;line-height:1.4">上田 智美<small style="display:block;font-size:12.5px;font-weight:700;color:var(--ink-soft)">理学療法士</small></p>
+        <p style="margin:0;font-size:13.5px;line-height:1.85;color:var(--ink-soft)">現在も産婦人科に勤務し、臓器脱ケア外来で、デリケートゾーンのケアに携わっています。</p>
+      </div>
+    </div>
+    <div class="voice">
+      <p>デリケートゾーンのケアを始めてから、かゆみが減っているように感じる。今までに月経カップや布ナプキンなど色々と試したが、どれも結局手間に感じてしまった。デリケートゾーンのケアは毎日の事だけど、いつもやることの延長線上にあるので手間だと感じない、取り組みやすい。</p>
+      <div class="who">40代 女性</div>
+    </div>
+    <p class="note">※個人の感想であり、効果を保証するものではありません。</p>
+    <a class="cta-btn" href="#apply">講座を受けてみる</a>
+  </section>
+
+  <!-- ============ 11・12. 申し込みの流れ＋当日の流れ ============ -->
+  <section class="alt">
+    <span class="eyebrow">お申し込みの流れ</span>
+    <ol class="steps">
+      <li><div><b>お申し込みボタンを押す</b>このページの「講座を受けてみる」から</div></li>
+      <li><div><b>講座のチケットを選ぶ・購入</b>Luma（ルーマ）のイベントページでお手続きいただきます。アカデミや会員の方は、会員の方用のチケットをお選びください</div></li>
+      <li><div><b>当日をワクワクしながら待つ</b>前日までに、Lumaにご登録のメールアドレスへ参加用のご案内が届きます</div></li>
+    </ol>
+
+    <span class="eyebrow" style="margin-top:36px">当日の流れ（40分）</span>
+    <ul class="timeline">
+      <li><b>導入（5分）</b>今日お話しすること、お伝えしたい考え方</li>
+      <li><b>お肌と作りのお話（10分）</b>デリケートゾーンのお肌や作りって、どうなっているの？</li>
+      <li><b>お手入れ方法（15分）</b>「どうして？」から、毎日の延長でできる方法まで</li>
+      <li><b>利用する製品について（5分）</b>お手入れに使うソープやオイルのご紹介</li>
+      <li><b>質問タイム（5分）</b>聞きづらかったことも、どうぞ</li>
+    </ul>
+    <p class="note" style="margin-top:0">※内容・時間配分は変更になる場合があります。</p>
+  </section>
+
+  <!-- ============ 13. Q&A ============ -->
+  <section>
+    <span class="eyebrow">Q&amp;A</span>
+    <div class="faq">
+      <details><summary>顔出しや発言は必要ですか？</summary><p>お顔出し・お声出しは、ご自身のお気持ちで決めていただけます。聞くだけのご参加も大丈夫です。</p></details>
+      <details><summary>当日参加できなくても大丈夫ですか？</summary><p>アーカイブをご用意しています。開催後2週間、お時間のあるときにご覧いただけます。</p></details>
+      <details><summary>どんな道具が必要ですか？</summary><p>特にご用意いただくものはありません。Zoomに入れるスマートフォンやパソコンがあればご参加いただけます。</p></details>
+      <details><summary>病院にかかったほうがよい症状の目安は？</summary><p>講座では医学的なことと、そうでないことを分けてお話しします。気になる症状が続くときは、医療機関へのご相談もご検討くださいね。</p></details>
+      <details><summary>何歳くらいの方向けですか？</summary><p>年齢を問わず、デリケートゾーンのお手入れが気になる女性にご参加いただけます。</p></details>
+      <details><summary>送料負担の対象はどんな場合ですか？</summary><p>講座の中でご紹介するソープやオイル（当店取り扱い商品）を、講座終了後3日以内にご購入いただいた場合に、送料のうち500円をMeno Careが負担いたします。</p></details>
+    </div>
+  </section>
+
+  <!-- ============ 14. 最終オファー ============ -->
+  <section class="final" id="apply">
+    <h2>はじめの一歩は、<br>40分から。</h2>
+    <p>2026年12月9日（水）21:20〜 40分／Zoom</p>
+    <p>参加費 1,000円（アカデミや会員は無料）</p>
+    <p>講座後3日以内のご購入で送料のうち500円を負担／アーカイブ付き</p>
+    <a class="cta-btn" href="#">講座を受けてみる<span class="sub">チケット購入ページへ <span class="tbd">URL要設定</span></span></a>
+  </section>
+
+  <footer>
+    女性の体ケア整体サロン Meno Care（メノケア）<br>
+    鹿児島市・西陵<br>
+    <a href="tokushoho.html" style="text-decoration:underline">特定商取引法に基づく表記</a>　｜　<a href="privacy.html" style="text-decoration:underline">プライバシーポリシー</a>
+  </footer>
+</div>
+
+<div class="sticky-cta"><a href="#apply">講座を受けてみる（12/9 21:20〜）</a></div>
+</body>
+</html>
