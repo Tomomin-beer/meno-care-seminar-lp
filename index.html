@@ -166,16 +166,16 @@
   footer { padding-top: 20px; }
 
   /* FV：写真の女性と文字が重ならない配置（文字は写真上部の余白＋上の帯、ボタン類は写真の下） */
-  .fv { --w: min(100vw, 440px); display: block; aspect-ratio: auto; min-height: 0; gap: 0; background: #FBF4EA; }
-  .fv-top { padding: 16px 20px 0; gap: 10px; }
+  .fv { --w: min(100vw, 440px); display: flex; flex-direction: column; aspect-ratio: auto; min-height: 0; gap: 0; background: #FBF4EA; }
+  .fv-top { order: 2; position: relative; z-index: 2; margin-top: calc(var(--w) * -0.55); padding: 16px 20px 0; gap: 10px; }
   .fv-hook { margin: 0; font-size: 13.5px; line-height: 1.7; border: 1px solid var(--line); box-shadow: 0 3px 12px rgba(120,80,60,.08); }
   .fv h1 { font-size: 28px; line-height: 1.38; color: var(--ink); text-shadow: none; margin: 4px 0 0; }
   .fv .sub { color: var(--ink-soft); text-shadow: none; margin: 0; font-size: 14px; line-height: 1.7; }
-  .fv-photo { position: relative; z-index: 1; margin-top: calc(var(--w) * -0.43); aspect-ratio: 1080 / 1400; overflow: hidden; pointer-events: none;
-    -webkit-mask-image: linear-gradient(180deg, transparent 0, #000 14%, #000 84%, transparent 100%);
-            mask-image: linear-gradient(180deg, transparent 0, #000 14%, #000 84%, transparent 100%); }
+  .fv-photo { position: relative; z-index: 1; order: 1; margin-top: 0; aspect-ratio: 1080 / 1400; overflow: hidden; pointer-events: none;
+    -webkit-mask-image: linear-gradient(180deg, #000 0, #000 80%, transparent 100%);
+            mask-image: linear-gradient(180deg, #000 0, #000 80%, transparent 100%); }
   .fv-photo img { display: block; width: 100%; height: auto; }
-  .fv-bottom { margin-top: -34px; padding-bottom: 28px; }
+  .fv-bottom { order: 3; margin-top: 0; padding-bottom: 28px; }
   .fv-date { background: #fff; border: 1px solid var(--line); box-shadow: 0 3px 12px rgba(120,80,60,.08); }
   .fv .cta-btn { background: var(--accent-deep); color: #fff; box-shadow: 0 8px 22px rgba(224,96,92,.32); }
   .fv-chips span { color: var(--accent-dark); border-color: rgba(224,96,92,.4); background: #fff; }
