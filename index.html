@@ -149,7 +149,7 @@
   h2.sec-title { font-size: 22px; margin-bottom: 14px; }
   .quote { font-size: 20px; margin-bottom: 14px; }
   .check-list { gap: 8px; margin-bottom: 18px; }
-  .check-list li { padding: 11px 14px; font-size: 14.5px; }
+  .check-list li { padding: 11px 14px; font-size: min(14.5px, 3.4vw); }
   .flow .box { padding: 11px 14px; } .flow .box b { display: block; }
   .flow { margin-bottom: 20px; }
   .benefit li { padding: 13px 14px; }
@@ -168,7 +168,7 @@
 
   /* FV：写真の女性と文字が重ならない配置（文字は写真上部の余白＋上の帯、ボタン類は写真の下） */
   .fv { --w: min(100vw, 440px); display: flex; flex-direction: column; aspect-ratio: auto; min-height: 0; gap: 0; background: #FBF4EA; }
-  .fv-top { order: 2; position: relative; z-index: 2; margin-top: calc(var(--w) * -0.42); padding: 16px 20px 0; gap: 10px; }
+  .fv-top { order: 2; position: relative; z-index: 2; margin-top: calc(var(--w) * -0.4); padding: 16px 20px 0; gap: 10px; }
   .fv-hook { margin: 0; font-size: 13.5px; line-height: 1.7; border: 1px solid var(--line); box-shadow: 0 3px 12px rgba(120,80,60,.08); }
   .fv h1 { font-size: 28px; line-height: 1.38; color: var(--ink); text-shadow: none; margin: 4px 0 0; }
   .fv .sub { color: var(--ink-soft); text-shadow: none; margin: 0; font-size: 14px; line-height: 1.7; }
@@ -176,6 +176,8 @@
     -webkit-mask-image: linear-gradient(180deg, #000 0, #000 80%, transparent 100%);
             mask-image: linear-gradient(180deg, #000 0, #000 80%, transparent 100%); }
   .fv-photo img { display: block; width: 100%; height: auto; }
+  .fv-title { order: 0; padding: 18px 20px 14px; position: relative; z-index: 2; }
+  .fv-title h1 { margin: 0; }
   .fv > * { min-width: 0; max-width: 100%; }
   .fv-top > *, .fv-bottom > *, .fv-date > div { min-width: 0; max-width: 100%; word-break: normal; overflow-wrap: anywhere; }
   .fv-bottom { order: 3; margin-top: 0; padding-bottom: 28px; }
@@ -207,12 +209,14 @@
 
   <!-- ============ 1. FV ============ -->
   <header class="fv" id="fv">
-    <div class="fv-top">
+    <div class="fv-title">
       <h1>かゆみや不快感は<br>仕方ない？<span class="h1-sub">〜大人のデリケートゾーンケアの基本〜</span></h1>
-      <p class="fv-hook">生理のたびに感じるかゆみや不快感。ナプキンを変えても変わらないなら、デリケートゾーンから変えてみない？</p>
+    </div>
+    <div class="fv-top">
+      <p class="fv-hook">生理のたびに感じるかゆみや不快感。<br>ナプキンを変えても変わらないなら、<br>デリケートゾーンから変えてみない？</p>
       <p class="sub">医学的なことと、そうでないことを分けて、やさしくお伝えします。</p>
     </div>
-    <div class="fv-photo"><img src="assets/fv.webp" alt="カフェの椅子に座り、スカートに手を添えている女性"></div>
+    <div class="fv-photo"><img src="assets/fv.webp" alt="下腹部に手を当てる女性のイメージ"></div>
     <div class="fv-bottom">
       <div class="fv-date">
         <div><b>12/9（水）21:20〜</b><small>40分／Zoomでオンライン開催／定員8名</small></div>
@@ -222,30 +226,9 @@
     </div>
   </header>
 
-  <!-- ============ 2・3. 悩みの共感＋問題提起 ============ -->
-  <section>
-    <span class="eyebrow">こんなこと、ありませんか？</span>
-    <h2 class="sec-title">生理が近づくと、気が滅入る。</h2>
-    <ul class="check-list">
-      <li><span class="tick">✓</span>生理が近づくと、気が滅入る</li>
-      <li><span class="tick">✓</span>この前かゆみが落ち着いたばっかりなのに…と思う</li>
-      <li><span class="tick">✓</span>周りには聞きづらくて、ひとりで調べている</li>
-    </ul>
-    <p class="quote">そんなこと<em>毎月</em>感じていませんか？</p>
-    <p class="lede" style="margin:0;text-align:center"><strong>閉経するまで、ずっと我慢し続けるしかないのかな？</strong><br>ふと、そう思うこともあるかもしれません。</p>
-    <div style="margin-top:28px;padding-top:24px;border-top:1px dashed var(--line)">
-      <p style="margin:0 0 12px;text-align:center;font-size:16px;font-weight:900;line-height:1.6;color:var(--accent-deep)">こんな方にもおすすめです</p>
-      <ul class="check-list" style="margin:0">
-        <li><span class="tick">✓</span>デリケートゾーンのケアに興味・関心がある方</li>
-        <li><span class="tick">✓</span>便秘がちの方</li>
-        <li><span class="tick">✓</span>出産後の会陰切開の傷跡が気になっている方</li>
-      </ul>
-    </div>
-  </section>
-
   <!-- ============ 4・5. 原因の提示＋解決策 ============ -->
-  <section class="alt">
-    <h2 class="sec-title">不快感は、ナプキンのせいだけではないのかも。</h2>
+  <section>
+    <h2 class="sec-title">不快感は、<br>ナプキンのせいだけでは<br>ないのかも。</h2>
     <p class="lede" style="margin-bottom:14px">デリケートゾーンの<strong>お肌の状態</strong>、気にしたことはありますか？</p>
     <div class="flow">
       <div class="box"><span class="btxt">これまで…<b>ナプキンのせい</b>だと思っていた</span><div class="slot fimg"><img src="assets/s04-1.jpg" alt="" onload="this.parentNode.classList.add('has-img')" onerror="this.style.display='none'"><span class="cap">画像1</span></div></div>
@@ -254,6 +237,28 @@
     </div>
     <h3 style="font-size:19px;line-height:1.6;font-weight:900;margin:8px 0 8px">普段から、正しいお手入れを。</h3>
     <p class="lede" style="margin:0">特別なことをするのではありません。<br>普段からデリケートゾーンについても<strong>正しいお手入れ</strong>をしてあげることで、<strong>快適な状態を保ちやすく</strong>なると言われています。</p>
+  </section>
+
+  <!-- ============ 2・3. 悩みの共感＋問題提起 ============ -->
+  <section class="alt">
+    <span class="eyebrow">こんなこと、ありませんか？</span>
+    <h2 class="sec-title">生理が近づくと、気が滅入る。</h2>
+    <ul class="check-list">
+      <li><span class="tick">✓</span>生理が近づくと、気が滅入る</li>
+      <li><span class="tick">✓</span>この前かゆみが落ち着いたばっかりなのに…<br>と思う</li>
+      <li><span class="tick">✓</span>周りには聞きづらくて、ひとりで調べている</li>
+    </ul>
+    <p class="quote">そんなこと<em>毎月</em>感じていませんか？</p>
+    <p class="lede" style="margin:0;text-align:center"><strong>閉経するまで、ずっと我慢し続けるしかないのかな？</strong><br>ふと、そう思うこともあるかもしれません。</p>
+    <div style="margin-top:28px;padding-top:24px;border-top:1px dashed var(--line)">
+      <p style="margin:0 0 12px;text-align:center;font-size:16px;font-weight:900;line-height:1.6;color:var(--accent-deep)">こんな方にもおすすめです</p>
+      <ul class="check-list" style="margin:0">
+        <li><span class="tick">✓</span>デリケートゾーンのケアに興味・関心がある</li>
+        <li><span class="tick">✓</span>便秘でお通じの時に切れちゃう</li>
+        <li><span class="tick">✓</span>出産後の会陰切開の傷跡が気になっている</li>
+        <li><span class="tick">✓</span>おりものシートを常用している</li>
+      </ul>
+    </div>
   </section>
 
   <!-- ============ 6. ベネフィット ============ -->
